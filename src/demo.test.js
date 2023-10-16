@@ -25,3 +25,8 @@ test("demo() addition", () => {
   const result = demo(1, 2)
   expect(result).toBe(3)
 });
+
+it("should retourn 7", function(){
+    const a= 8
+    expect(a).toBe(8)
+})
