@@ -29,3 +29,22 @@ expect.extend({
 test("check akber", () => {
   expect(10).toBeAkberThen(1);
 });
+
+///
+
+//expect anything ==>==>==>==>=>==> match tout sauf null et undifiend
+
+test("blabla", () => {
+  expect("blabla").toEqual(expect.anything());
+});
+
+//expect any (constructor)
+test("expect any constructor", () => {
+  expect(2).toEqual(expect.any(Number));
+});
+
+//expect arrayContaining(array)
+test("expect arrayContaining", () => {
+  const arr = [2, 4, 6, 8, 10];
+  expect(arr).toEqual(expect.arrayContaining([10, 2]));
+});
